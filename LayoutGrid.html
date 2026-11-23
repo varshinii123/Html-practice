@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KL Admissions</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f5f7fb;
+  margin: 0;
+}
+header {
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+main {
+  background: white;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 20px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: 0;
+  margin-top: 15px;
+}
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width:600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main {
+    margin: 10px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<h2>KL Admissions</h2>
+<nav>
+<a href="#">Programmes</a>
+<a href="#">Apply Online</a>
+<a href="#">Track Status</a>
+</nav>
+</header>
+<main>
+<h2>Online Admission Application</h2>
+<form>
+<div class="form">
+
+<div>
+<label>Full Name *</label>
+<input type="text" required>
+</div>
+<div>
+<label>Email Address *</label>
+<input type="email" required>
+</div>
+<div>
+<label>Mobile Number *</label>
+<input type="tel" required>
+</div>
+<div>
+<label>Select Programme *</label>
+<select>
+<option>B.Tech</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>MBA</option>
+</select>
+</div>
+<div>
+<label>Percentage *</label>
+<input type="number">
+</div>
+<div>
+<label>Upload Marksheet</label>
+<input type="file">
+</div>
+</div>
+<button type="submit">Submit Application</button>
+</form>
+</main>
+<footer>
+KL Admissions Portal
+</footer>
+</body>
+</html>
